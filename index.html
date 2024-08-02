@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list application</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./fonts/poppins/css/poppins.css">
+    <link rel="stylesheet" href="./css/app.css">
+
+</head>
+<body>
+    
+    <div class="header-container">
+        <header class="header box-shd">
+            <div class="header__left">
+                <h1 class="header__left-title">Todo list application <span class="header__left-title-span">(HTML supported)</span></h1>
+            </div>
+            <div class="header__right" id="change-theme-btn">
+                <i class="header__right-icon fa" id="change-theme-btn-icon"></i>
+            </div>
+        </header>
+    </div>
+
+    <div class="main-container">
+        <form class="todo-input-section" id="form">
+            <input type="text" class="todo-input-section__input box-shd" id="todo-input" placeholder="Enter a todo..." autofocus>
+            <button type="submit" class="todo-input-section__submit-button box-shd">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="todo-input-section__submit-button-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                </svg>
+              </button>
+        </form>
+        <div class="todo-section" id="todo-container">
+            <!-- <div class="todo-section__todo box-shd">
+                <h4 class="todo-section__todo-title">todo content</h4>
+                <i class="todo-section__todo-trash fa fa-trash"></i>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
